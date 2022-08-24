@@ -103,7 +103,6 @@ bool isItemNameExist(string name, Set a)
 }
 
 // Swap function (Matthew Labial John)
-// Swapping data because normal swap buggy (don't know how to implement)
 void sortSwap(Product *a, Product *b)
 {
     int productQuantity = a->productQuantity;
@@ -478,7 +477,7 @@ Set sortInstructions(Set a)
         return a;
 }
 
-// Creating new node
+// Creating new node (Chew Zhi Peng)
 Product *initProductNode(string v)
 {
     Product *temp;
@@ -527,7 +526,7 @@ void saveSet(Set set)
     cout << "Item added successful";
 }
 
-// Edit Function (Tan Pey Yi)
+// Edit Function (Chew Zhi Peng)
 void editProduct(Set product)
 {
     string itemID;
@@ -547,7 +546,7 @@ void editProduct(Set product)
     editSet(itemID, product);
 }
 
-// edit from file function ( Tan Pey Yi)
+// edit from file function (Chew Zhi Peng)
 void editSet(string itemID, Set product)
 {
     string currentID;
@@ -666,7 +665,7 @@ void editSet(string itemID, Set product)
     editProduct(product);
 }
 
-// Function to add new node
+// Function to add new node (Chew Zhi Peng)
 Product *initLLNode(string pid, string pName, string pCat, string pBrand, float pPrice, int pQuantity)
 {
     Product *temp;
